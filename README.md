@@ -55,10 +55,19 @@ Adds a day-by-day Forecast Schedule table to the Capacity + Forecast page (Date,
 | **DSAT Execution Plan** | Setup tasks + milestones with forecast dates |
 | **Capacity + Forecast** | Key dates and assumptions |
 
+## Portfolio Visuals
+
+See [`docs/portfolio-visuals.md`](docs/portfolio-visuals.md) for reusable SVG
+visuals that explain the system workflow, Notion data model, forecast burn-down,
+and dashboard story.
+
 ## Project Structure
 
 ```
 ├── PROJECT_REFERENCE.md      # Assessment requirements (single source of truth)
+├── docs/
+│   ├── portfolio-visuals.md  # Portfolio-ready visual guide
+│   └── visuals/              # SVG diagrams for GitHub, slides, and websites
 ├── NOTION_MCP_INSTRUCTIONS.md # How to use Notion MCP for manual setup
 ├── SUMMARY_TEMPLATE.md       # 400-word summary template
 ├── scripts/
