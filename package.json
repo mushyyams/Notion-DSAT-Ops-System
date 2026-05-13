@@ -1,0 +1,21 @@
+{
+  "name": "dsat-ops",
+  "version": "1.0.0",
+  "description": "DSAT Operations system - creates Notion databases and runs forecast",
+  "type": "module",
+  "scripts": {
+    "setup": "node scripts/notion-setup.js",
+    "forecast": "node scripts/forecast.js",
+    "seed": "node scripts/seed-sample-data.js",
+    "add-forecast-table": "node scripts/add-forecast-table.js",
+    "insights": "node scripts/create-insights-page.js",
+    "refresh-relations": "node scripts/refresh-relations.js",
+    "add-more-data": "node scripts/add-more-data.js",
+    "add-progress-bar": "node scripts/add-progress-bar.js",
+    "summary": "node scripts/create-summary-page.js",
+    "full": "node scripts/forecast.js && node scripts/notion-setup.js"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.15"
+  }
+}
