@@ -58,9 +58,10 @@ Adds a day-by-day Forecast Schedule table to the Capacity + Forecast page (Date,
 ## Portfolio Visuals
 
 See [`docs/portfolio-visuals.md`](docs/portfolio-visuals.md) for reusable SVG
-visuals that explain the system workflow, Notion data model, forecast burn-down,
-and dashboard story. See [`docs/usage-wireframes.md`](docs/usage-wireframes.md)
-for wireframes and screenshot-style mockups of how the system would be used.
+source files and PNG previews that explain the system workflow, Notion data
+model, forecast burn-down, and dashboard story. See
+[`docs/usage-wireframes.md`](docs/usage-wireframes.md) for wireframes and
+screenshot-style mockups of how the system would be used.
 
 ## Project Structure
 
@@ -69,7 +70,7 @@ for wireframes and screenshot-style mockups of how the system would be used.
 ├── docs/
 │   ├── portfolio-visuals.md  # Portfolio-ready visual guide
 │   ├── usage-wireframes.md   # Wireframes and screenshot-style usage mockups
-│   └── visuals/              # SVG diagrams for GitHub, slides, and websites
+│   └── visuals/              # SVG source files and PNG previews
 ├── NOTION_MCP_INSTRUCTIONS.md # How to use Notion MCP for manual setup
 ├── SUMMARY_TEMPLATE.md       # 400-word summary template
 ├── scripts/
