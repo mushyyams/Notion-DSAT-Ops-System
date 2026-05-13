@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
+  <title id="title">DSAT operations dashboard storyboard</title>
+  <desc id="desc">Portfolio-style storyboard of a Notion dashboard with key dates, SLA performance, taxonomy distribution, status pipeline, and at-risk work.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
+    <style>
+      .title { font: 700 34px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #ffffff; }
+      .subtitle { font: 500 16px Inter, ui-sans-serif, system-ui, sans-serif; fill: #cbd5e1; }
+      .card-title { font: 700 18px Inter, ui-sans-serif, system-ui, sans-serif; fill: #0f172a; }
+      .metric { font: 800 32px Inter, ui-sans-serif, system-ui, sans-serif; fill: #0f172a; }
+      .small { font: 500 13px Inter, ui-sans-serif, system-ui, sans-serif; fill: #64748b; }
+      .tiny { font: 700 11px Inter, ui-sans-serif, system-ui, sans-serif; fill: #64748b; letter-spacing: .08em; }
+      .table { font: 600 13px Inter, ui-sans-serif, system-ui, sans-serif; fill: #334155; }
+      .white { fill: #ffffff; }
+      .axis { stroke: #e2e8f0; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="780" rx="32" fill="url(#bg)"/>
+  <circle cx="1080" cy="110" r="150" fill="#2563eb" opacity="0.25"/>
+  <circle cx="92" cy="700" r="190" fill="#14b8a6" opacity="0.18"/>
+
+  <text x="60" y="74" class="title">Portfolio Dashboard Storyboard</text>
+  <text x="60" y="106" class="subtitle">How the finished Notion system can be presented as an operating dashboard for CX leadership.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="60" y="150" width="1080" height="560" rx="30" fill="#f8fafc"/>
+    <rect x="60" y="150" width="1080" height="72" rx="30" fill="#ffffff"/>
+    <circle cx="100" cy="186" r="10" fill="#ef4444"/>
+    <circle cx="130" cy="186" r="10" fill="#f59e0b"/>
+    <circle cx="160" cy="186" r="10" fill="#22c55e"/>
+    <text x="205" y="193" style="font: 700 20px Inter, ui-sans-serif, system-ui, sans-serif; fill: #0f172a;">DSAT Operations Command Center</text>
+    <rect x="910" y="171" width="170" height="32" rx="16" fill="#dcfce7"/>
+    <text x="944" y="192" style="font: 700 13px Inter, ui-sans-serif, system-ui, sans-serif; fill: #166534;">SLA ready: Mar 23</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="95" y="255" width="220" height="112" rx="22" fill="#ffffff"/>
+    <text x="122" y="288" class="tiny">SETUP COMPLETE</text>
+    <text x="122" y="326" class="metric">Mar 9</text>
+    <text x="122" y="350" class="small">First categorization day</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="345" y="255" width="220" height="112" rx="22" fill="#ffffff"/>
+    <text x="372" y="288" class="tiny">BACKLOG ZERO</text>
+    <text x="372" y="326" class="metric">Mar 23</text>
+    <text x="372" y="350" class="small">All DSATs categorized</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="595" y="255" width="220" height="112" rx="22" fill="#ffffff"/>
+    <text x="622" y="288" class="tiny">STEADY ARRIVALS</text>
+    <text x="622" y="326" class="metric">12/day</text>
+    <text x="622" y="350" class="small">After day 8</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="845" y="255" width="220" height="112" rx="22" fill="#ffffff"/>
+    <text x="872" y="288" class="tiny">WEEKDAY CAPACITY</text>
+    <text x="872" y="326" class="metric">72/day</text>
+    <text x="872" y="350" class="small">Mon-Fri categorization</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="95" y="405" width="315" height="238" rx="24" fill="#ffffff"/>
+    <text x="122" y="442" class="card-title">Taxonomy distribution</text>
+    <text x="122" y="468" class="small">Root-cause categories by DSAT count</text>
+    <line x1="122" y1="600" x2="370" y2="600" class="axis"/>
+    <rect x="135" y="505" width="38" height="95" rx="8" fill="#2563eb"/>
+    <rect x="186" y="528" width="38" height="72" rx="8" fill="#60a5fa"/>
+    <rect x="237" y="545" width="38" height="55" rx="8" fill="#93c5fd"/>
+    <rect x="288" y="560" width="38" height="40" rx="8" fill="#bfdbfe"/>
+    <text x="134" y="625" class="small">Tech</text>
+    <text x="185" y="625" class="small">Wait</text>
+    <text x="236" y="625" class="small">Bill</text>
+    <text x="286" y="625" class="small">Comm</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="442" y="405" width="315" height="238" rx="24" fill="#ffffff"/>
+    <text x="469" y="442" class="card-title">SLA performance</text>
+    <text x="469" y="468" class="small">Completed items grouped by SLA met?</text>
+    <circle cx="560" cy="548" r="68" fill="none" stroke="#dcfce7" stroke-width="26"/>
+    <path d="M 560 480 A 68 68 0 1 1 493 559" fill="none" stroke="#16a34a" stroke-width="26" stroke-linecap="round"/>
+    <text x="532" y="557" class="metric" style="font-size: 28px;">86%</text>
+    <rect x="648" y="507" width="78" height="16" rx="8" fill="#16a34a"/>
+    <text x="648" y="545" class="small">Met SLA</text>
+    <rect x="648" y="570" width="42" height="16" rx="8" fill="#f97316"/>
+    <text x="648" y="608" class="small">Missed</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="790" y="405" width="315" height="238" rx="24" fill="#ffffff"/>
+    <text x="817" y="442" class="card-title">Pipeline and risk queue</text>
+    <text x="817" y="468" class="small">Status snapshot plus at-risk items</text>
+    <rect x="817" y="500" width="246" height="34" rx="10" fill="#eff6ff"/>
+    <text x="833" y="522" class="table">New</text>
+    <text x="1019" y="522" class="table">3</text>
+    <rect x="817" y="544" width="246" height="34" rx="10" fill="#fef9c3"/>
+    <text x="833" y="566" class="table">In Progress</text>
+    <text x="1019" y="566" class="table">2</text>
+    <rect x="817" y="588" width="246" height="34" rx="10" fill="#dcfce7"/>
+    <text x="833" y="610" class="table">Categorized</text>
+    <text x="1013" y="610" class="table">13</text>
+  </g>
+
+  <g>
+    <rect x="120" y="674" width="960" height="1" fill="#e2e8f0"/>
+    <text x="120" y="692" style="font: 600 13px Inter, ui-sans-serif, system-ui, sans-serif; fill: #475569;">Presentation angle: "I converted an ambiguous operations assignment into an auditable command center: forecast, taxonomy, execution plan, sample data, and health views."</text>
+  </g>
+</svg>

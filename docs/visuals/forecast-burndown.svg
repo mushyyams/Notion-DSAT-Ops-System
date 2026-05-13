@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">DSAT backlog forecast burn-down</title>
+  <desc id="desc">Line chart showing backlog growth during setup and burn-down during categorization, ending with backlog zero and SLA sustainable on 2026-03-23.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eef2ff"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="40%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .title { font: 700 34px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+      .subtitle { font: 500 16px Inter, ui-sans-serif, system-ui, sans-serif; fill: #475569; }
+      .axis { stroke: #94a3b8; stroke-width: 2; }
+      .grid { stroke: #dbe3ef; stroke-width: 1; }
+      .label { font: 600 13px Inter, ui-sans-serif, system-ui, sans-serif; fill: #64748b; }
+      .metric { font: 700 28px Inter, ui-sans-serif, system-ui, sans-serif; fill: #0f172a; }
+      .metric-label { font: 700 12px Inter, ui-sans-serif, system-ui, sans-serif; fill: #64748b; letter-spacing: .08em; }
+      .note-title { font: 700 18px Inter, ui-sans-serif, system-ui, sans-serif; fill: #0f172a; }
+      .note { font: 500 13px Inter, ui-sans-serif, system-ui, sans-serif; fill: #475569; }
+      .callout { font: 700 14px Inter, ui-sans-serif, system-ui, sans-serif; fill: #0f172a; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="760" rx="32" fill="url(#bg)"/>
+  <text x="60" y="72" class="title">Backlog Burn-down Forecast</text>
+  <text x="60" y="104" class="subtitle">The model accounts for setup time, daily arrivals, weekday-only capacity, and the 2-business-day SLA target.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="60" y="135" width="1080" height="540" rx="28" fill="#ffffff"/>
+  </g>
+
+  <rect x="130" y="200" width="271" height="370" rx="0" fill="#ffedd5" opacity="0.55"/>
+  <rect x="401" y="200" width="679" height="370" rx="0" fill="#dcfce7" opacity="0.42"/>
+
+  <line x1="130" y1="570" x2="1080" y2="570" class="axis"/>
+  <line x1="130" y1="200" x2="130" y2="570" class="axis"/>
+
+  <line x1="130" y1="490" x2="1080" y2="490" class="grid"/>
+  <line x1="130" y1="410" x2="1080" y2="410" class="grid"/>
+  <line x1="130" y1="330" x2="1080" y2="330" class="grid"/>
+  <line x1="130" y1="250" x2="1080" y2="250" class="grid"/>
+
+  <text x="88" y="574" class="label">0</text>
+  <text x="82" y="494" class="label">150</text>
+  <text x="82" y="414" class="label">300</text>
+  <text x="82" y="334" class="label">450</text>
+  <text x="82" y="254" class="label">600</text>
+
+  <text x="154" y="616" class="label">Mar 2</text>
+  <text x="401" y="616" class="label">Mar 9</text>
+  <text x="762" y="616" class="label">Mar 16</text>
+  <text x="1026" y="616" class="label">Mar 23</text>
+
+  <text x="190" y="226" class="callout">Setup window</text>
+  <text x="190" y="249" class="note">No categorization yet</text>
+  <text x="692" y="226" class="callout">Categorization window</text>
+  <text x="692" y="249" class="note">72/day on weekdays; arrivals continue daily</text>
+
+  <path d="M 130 319 L 401 252 L 446 281 L 491 313 L 537 345 L 582 377 L 627 409 L 672 402 L 718 396 L 763 428 L 808 460 L 853 492 L 899 524 L 944 556 L 989 549 L 1034 543 L 1080 570"
+        fill="none" stroke="url(#line)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 130 319 L 401 252 L 446 281 L 491 313 L 537 345 L 582 377 L 627 409 L 672 402 L 718 396 L 763 428 L 808 460 L 853 492 L 899 524 L 944 556 L 989 549 L 1034 543 L 1080 570 L 1080 570 L 130 570 Z"
+        fill="url(#line)" opacity="0.08"/>
+
+  <circle cx="130" cy="319" r="8" fill="#f97316" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="401" cy="252" r="8" fill="#f97316" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="1080" cy="570" r="9" fill="#16a34a" stroke="#ffffff" stroke-width="4"/>
+
+  <g filter="url(#shadow)">
+    <rect x="160" y="292" width="210" height="82" rx="18" fill="#ffffff"/>
+    <text x="182" y="324" class="metric-label">STARTING BACKLOG</text>
+    <text x="182" y="356" class="metric">471</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="430" y="270" width="250" height="92" rx="18" fill="#ffffff"/>
+    <text x="452" y="302" class="metric-label">BACKLOG AFTER SETUP</text>
+    <text x="452" y="336" class="metric">597</text>
+    <text x="520" y="336" class="note">on 2026-03-09</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="812" y="468" width="252" height="92" rx="18" fill="#ffffff"/>
+    <text x="834" y="500" class="metric-label">SLA SUSTAINABLE</text>
+    <text x="834" y="534" class="metric">2026-03-23</text>
+  </g>
+
+  <g>
+    <rect x="90" y="645" width="1020" height="1" fill="#e2e8f0"/>
+    <text x="90" y="705" class="note-title">Portfolio takeaway:</text>
+    <text x="260" y="705" class="note">The forecast creates an auditable operations plan: setup completes Mar 9, backlog is cleared Mar 23, and new DSATs can stay within SLA because steady-state demand is below weekday capacity.</text>
+  </g>
+</svg>
