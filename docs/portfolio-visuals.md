@@ -5,6 +5,9 @@ workflow, data model, forecast logic, and the executive dashboard story. They ar
 static SVG files, so they render in GitHub, can be embedded in a portfolio site,
 and can be exported to PNG for slides.
 
+For usage-focused wireframes and screenshot-style mockups, see
+[`usage-wireframes.md`](usage-wireframes.md).
+
 ## 1. System workflow
 
 Use this visual to open the case study. It shows how assignment inputs flow into
@@ -66,9 +69,11 @@ items."
    forecast for when service levels become sustainable.
 2. **System design:** Show the workflow and data model visuals.
 3. **Forecast logic:** Show the burn-down visual and cite the key dates.
-4. **Operational outcome:** Show the dashboard storyboard and explain the daily
+4. **Usage walkthrough:** Show the wireframes and screenshot mockups from
+   `docs/usage-wireframes.md`.
+5. **Operational outcome:** Show the dashboard storyboard and explain the daily
    and weekly operating cadence.
-5. **Technical implementation:** Link to the scripts:
+6. **Technical implementation:** Link to the scripts:
    - `scripts/forecast.js`
    - `scripts/notion-setup.js`
    - `scripts/add-forecast-table.js`

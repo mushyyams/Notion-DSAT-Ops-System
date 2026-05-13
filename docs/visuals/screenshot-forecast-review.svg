@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="980" viewBox="0 0 1440 980" role="img" aria-labelledby="title desc">
+  <title id="title">Screenshot mockup of capacity and forecast review</title>
+  <desc id="desc">Screenshot-style Notion Capacity and Forecast page showing key dates, assumptions, and auditable forecast schedule rows.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0f172a" flood-opacity="0.18"/>
+    </filter>
+    <style>
+      .browser { fill: #ffffff; }
+      .chrome { fill: #f1f5f9; }
+      .sidebar { fill: #fbfbfa; }
+      .page-title { font: 800 42px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #111827; }
+      .h2 { font: 700 20px Inter, ui-sans-serif, system-ui, sans-serif; fill: #111827; }
+      .body { font: 500 14px Inter, ui-sans-serif, system-ui, sans-serif; fill: #334155; }
+      .small { font: 600 12px Inter, ui-sans-serif, system-ui, sans-serif; fill: #64748b; }
+      .head { font: 700 12px Inter, ui-sans-serif, system-ui, sans-serif; fill: #64748b; letter-spacing: .05em; }
+      .cell { font: 500 13px Inter, ui-sans-serif, system-ui, sans-serif; fill: #334155; }
+      .metric { font: 800 27px Inter, ui-sans-serif, system-ui, sans-serif; fill: #111827; }
+      .table-line { stroke: #e5e7eb; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="980" fill="#e2e8f0"/>
+  <g filter="url(#shadow)">
+    <rect x="70" y="60" width="1300" height="860" rx="28" class="browser"/>
+    <rect x="70" y="60" width="1300" height="64" rx="28" class="chrome"/>
+    <circle cx="108" cy="92" r="8" fill="#ef4444"/>
+    <circle cx="136" cy="92" r="8" fill="#f59e0b"/>
+    <circle cx="164" cy="92" r="8" fill="#22c55e"/>
+    <rect x="230" y="78" width="530" height="28" rx="14" fill="#ffffff"/>
+    <text x="252" y="97" class="small">notion.so/Capacity-Forecast</text>
+
+    <rect x="70" y="124" width="250" height="796" class="sidebar"/>
+    <text x="105" y="175" class="small">DSAT Operations</text>
+    <text x="124" y="231" class="body">Command Center</text>
+    <text x="124" y="276" class="body">DSAT Intake</text>
+    <text x="124" y="318" class="body">Taxonomy</text>
+    <rect x="105" y="337" width="185" height="32" rx="8" fill="#fef9c3"/>
+    <text x="124" y="358" class="body">Capacity + Forecast</text>
+    <text x="124" y="400" class="body">DSAT Insights</text>
+
+    <g transform="translate(370 170)">
+      <text x="0" y="0" class="page-title">Capacity + Forecast</text>
+      <text x="0" y="38" class="body">Auditable day-by-day schedule used to explain when backlog reaches zero and SLA becomes sustainable.</text>
+
+      <rect x="0" y="80" width="280" height="126" rx="18" fill="#eff6ff" stroke="#bfdbfe"/>
+      <text x="24" y="116" class="small">Setup complete</text>
+      <text x="24" y="154" class="metric">2026-03-09</text>
+      <text x="24" y="180" class="body">First day categorization can begin</text>
+
+      <rect x="310" y="80" width="280" height="126" rx="18" fill="#f0fdf4" stroke="#bbf7d0"/>
+      <text x="334" y="116" class="small">Backlog zero</text>
+      <text x="334" y="154" class="metric">2026-03-23</text>
+      <text x="334" y="180" class="body">All DSATs categorized</text>
+
+      <rect x="620" y="80" width="280" height="126" rx="18" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="644" y="116" class="small">SLA sustainable</text>
+      <text x="644" y="154" class="metric">2026-03-23</text>
+      <text x="644" y="180" class="body">2-business-day SLA can hold</text>
+
+      <rect x="0" y="250" width="900" height="94" rx="18" fill="#fff7ed" stroke="#fed7aa"/>
+      <text x="28" y="286" class="h2">Forecast assumptions</text>
+      <text x="28" y="318" class="body">Initial backlog: 471 | Arrivals: 18/day for days 1-8, then 12/day | Capacity: 72/day weekdays only | Setup: 5 business days</text>
+
+      <text x="0" y="402" class="h2">Forecast Schedule (Auditable)</text>
+      <rect x="0" y="430" width="900" height="320" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
+      <rect x="0" y="430" width="900" height="46" rx="18" fill="#f8fafc"/>
+      <text x="22" y="460" class="head">DATE</text>
+      <text x="148" y="460" class="head">DAY</text>
+      <text x="238" y="460" class="head">BUSINESS?</text>
+      <text x="378" y="460" class="head">ARRIVALS</text>
+      <text x="510" y="460" class="head">CAPACITY</text>
+      <text x="642" y="460" class="head">PROCESSED</text>
+      <text x="780" y="460" class="head">BACKLOG</text>
+
+      <line x1="0" y1="476" x2="900" y2="476" class="table-line"/>
+      <line x1="0" y1="528" x2="900" y2="528" class="table-line"/>
+      <line x1="0" y1="580" x2="900" y2="580" class="table-line"/>
+      <line x1="0" y1="632" x2="900" y2="632" class="table-line"/>
+      <line x1="0" y1="684" x2="900" y2="684" class="table-line"/>
+
+      <text x="22" y="510" class="cell">2026-03-09</text>
+      <text x="148" y="510" class="cell">8</text>
+      <text x="238" y="510" class="cell">Yes</text>
+      <text x="378" y="510" class="cell">18</text>
+      <text x="510" y="510" class="cell">72</text>
+      <text x="642" y="510" class="cell">72</text>
+      <text x="780" y="510" class="cell">543</text>
+
+      <text x="22" y="562" class="cell">2026-03-13</text>
+      <text x="148" y="562" class="cell">12</text>
+      <text x="238" y="562" class="cell">Yes</text>
+      <text x="378" y="562" class="cell">12</text>
+      <text x="510" y="562" class="cell">72</text>
+      <text x="642" y="562" class="cell">72</text>
+      <text x="780" y="562" class="cell">303</text>
+
+      <text x="22" y="614" class="cell">2026-03-16</text>
+      <text x="148" y="614" class="cell">15</text>
+      <text x="238" y="614" class="cell">Yes</text>
+      <text x="378" y="614" class="cell">12</text>
+      <text x="510" y="614" class="cell">72</text>
+      <text x="642" y="614" class="cell">72</text>
+      <text x="780" y="614" class="cell">267</text>
+
+      <text x="22" y="666" class="cell">2026-03-23</text>
+      <text x="148" y="666" class="cell">22</text>
+      <text x="238" y="666" class="cell">Yes</text>
+      <text x="378" y="666" class="cell">12</text>
+      <text x="510" y="666" class="cell">72</text>
+      <text x="642" y="666" class="cell">27</text>
+      <text x="780" y="666" class="cell">0</text>
+    </g>
+  </g>
+</svg>
